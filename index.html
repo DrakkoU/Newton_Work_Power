@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Physics Calculator</h1>
+
+                <div class="calculator-section">
+            <h2>5. Average Velocity</h2>
+            <div class="input-group">
+                <label for="distance-vel">Distance (m):</label>
+                <input type="number" id="distance-vel" step="0.1" min="0">
+            </div>
+            <div class="input-group">
+                <label for="time-vel">Time (s):</label>
+                <input type="number" id="time-vel" step="0.1" min="0.1">
+            </div>
+            <button id="calc-velocity">Calculate Velocity</button>
+            <div id="velocity-result" class="result"></div>
+        </div>
+        
+        <!-- 1. Force Calculator -->
+        <div class="calculator-section">
+            <h2>1. Newton's Second Law (Force)</h2>
+            <div class="input-group">
+                <label for="mass">Mass (kg):</label>
+                <input type="number" id="mass" step="0.01" min="0">
+            </div>
+            <div class="input-group">
+                <label for="acceleration">Acceleration (m/s²):</label>
+                <input type="number" id="acceleration" step="0.01">
+            </div>
+            <button id="calc-force">Calculate Force</button>
+            <div id="force-result" class="result"></div>
+        </div>
+        
+        <!-- 2. Work Calculator -->
+        <div class="calculator-section">
+            <h2>2. Work Done</h2>
+            <div class="input-group">
+                <label for="force">Force (N):</label>
+                <input type="number" id="force" step="0.01" min="0">
+            </div>
+            <div class="input-group">
+                <label for="distance">Distance (m):</label>
+                <input type="number" id="distance" step="0.01" min="0">
+            </div>
+            <div class="input-group">
+                <label for="angle">Angle (°):</label>
+                <input type="number" id="angle" value="0" min="0" max="90">
+            </div>
+            <button id="calc-work">Calculate Work</button>
+            <div id="work-result" class="result"></div>
+        </div>
+        
+        <!-- 3. Power Calculator -->
+        <div class="calculator-section">
+            <h2>3. Power Output</h2>
+            <div class="input-group">
+                <label for="work">Work (J):</label>
+                <input type="number" id="work" step="0.01" min="0">
+            </div>
+            <div class="input-group">
+                <label for="time">Time (s):</label>
+                <input type="number" id="time" step="0.01" min="0.01">
+            </div>
+            <button id="calc-power">Calculate Power</button>
+            <div id="power-result" class="result"></div>
+        </div>
+        
+        <!-- 4. Acceleration Calculator (NEW) -->
+        <div class="calculator-section">
+            <h2>4. Find Acceleration</h2>
+            <div class="input-group">
+                <label for="initial-vel">Initial Velocity (m/s):</label>
+                <input type="number" id="initial-vel" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="final-vel">Final Velocity (m/s):</label>
+                <input type="number" id="final-vel" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="time-interval">Time Interval (s):</label>
+                <input type="number" id="time-interval" step="0.1" min="0.1">
+            </div>
+            <button id="calc-acceleration">Calculate Acceleration</button>
+            <div id="acceleration-result" class="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
